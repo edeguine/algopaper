@@ -31,8 +31,6 @@ void SnakeColors::processSnakeColors(myImage *im, string jparam) {
 
 	// Finally using the triadic system
 	// xperiod = yperiod = zperiod makes cute tiles
-	// 1495657109.png
-	// x,y,zperiod = 50, 20, 30 gives 1495665829.png
 
 	for(int i = 0; i < im->w; i++) {
 		for(int j = 0; j < im->h; j++) {
