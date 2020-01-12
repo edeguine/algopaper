@@ -37,7 +37,7 @@ To use the CPP code and generate a test image test.png:
 ```
     cd cpp/test
     make test
-    ./test mandala.png
+    ./test
     open test.png
 ```
 
