@@ -13,10 +13,10 @@ The app features a few different image generation algorithms that I am developin
 ### Screenshots
 
 Here are some screenshots of the algos:
-![Pastel](https://raw.githubusercontent.com/edeguine/magiccolor/master/images/pastel.png)
-![Snake](https://raw.githubusercontent.com/edeguine/magiccolor/master/images/snake.png)
-![Spiral 1](https://raw.githubusercontent.com/edeguine/magiccolor/master/images/spiralfade.png)
-![Spiral 2](https://raw.githubusercontent.com/edeguine/magiccolor/master/images/spiralfademulti.png)
+![Pastel](https://raw.githubusercontent.com/edeguine/algopaper/master/images/pastel.png)
+![Snake](https://raw.githubusercontent.com/edeguine/algopaper/master/images/snake.png)
+![Spiral 1](https://raw.githubusercontent.com/edeguine/algopaper/master/images/spiralfade.png)
+![Spiral 2](https://raw.githubusercontent.com/edeguine/algopaper/master/images/spiralfademulti.png)
 
 
 ## The code
