@@ -17,7 +17,7 @@ void testSnakeColors(myImage *mim) {
 }
 
 void testSpiralColors(myImage *mim) {
-    string jparam = "{\"angleModulo\": 0.785, \"radiusModulo\": 500.0, \"radiusPeriod\": 500.0}";
+    string jparam = "{\"angleModulo\": 1.2, \"radiusModulo\": 500.0, \"radiusPeriod\": 500.0}";
     SpiralColors::processSpiralColors(mim, jparam);
 }
 
@@ -32,7 +32,7 @@ void testSpiralColorsFadeMulti(myImage *mim) {
 }
 
 void testPastelGradients(myImage *mim) {
-    string jparam = "{\"ph\": 50, \"yoffset\": 20, \"mixperiod\": 300}";
+    string jparam = "{\"ph\": 20, \"yoffset\": 20, \"mixperiod\": 300}";
     PastelGradients::processPastelGradients(mim, jparam);
 }
 
@@ -60,11 +60,11 @@ int main(int argc, char** argv) {
 		mim = new myCImage(800, 800);
 	}
 
-    testPastelGradients(mim);
+    //testPastelGradients(mim);
     //testSnakeColors(mim);
     //testSpiralColors(mim);
     //testSpiralColorsFade(mim);
-    //testSpiralColorsFadeMulti(mim);
+    testSpiralColorsFadeMulti(mim);
 
 	string outputfilename = "test.png";
 	cout << "Writing " << outputfilename << endl;
