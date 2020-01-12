@@ -3,6 +3,7 @@
 #include <iostream>
 #include <png++/png.hpp>
 
+#include "GlitchMandalas.h"
 #include "PastelGradients.h"
 #include "SpiralColors.h"
 #include "SpiralColorsFade.h"
@@ -10,6 +11,15 @@
 #include "SnakeColors.h"
 
 using namespace std;
+
+void testGlitchMandalas(myImage *mim) {
+    GlitchMandalas::render(mim);
+}
+
+void testPastelGradients(myImage *mim) {
+    string jparam = "{\"ph\": 20, \"yoffset\": 20, \"mixperiod\": 300}";
+    PastelGradients::processPastelGradients(mim, jparam);
+}
 
 void testSnakeColors(myImage *mim) {
     string jparam = "{\"xperiod\": 25.0, \"yperiod\": 30.0, \"zperiod\": 35.0}";
@@ -31,10 +41,7 @@ void testSpiralColorsFadeMulti(myImage *mim) {
     SpiralColorsFadeMulti::processSpiralColorsFadeMulti(mim, jparam);
 }
 
-void testPastelGradients(myImage *mim) {
-    string jparam = "{\"ph\": 20, \"yoffset\": 20, \"mixperiod\": 300}";
-    PastelGradients::processPastelGradients(mim, jparam);
-}
+
 
 int main(int argc, char** argv) {
 	cout << "starting " << endl;
@@ -60,11 +67,12 @@ int main(int argc, char** argv) {
 		mim = new myCImage(800, 800);
 	}
 
+    testGlitchMandalas(mim);
     //testPastelGradients(mim);
     //testSnakeColors(mim);
     //testSpiralColors(mim);
     //testSpiralColorsFade(mim);
-    testSpiralColorsFadeMulti(mim);
+    //testSpiralColorsFadeMulti(mim);
 
 	string outputfilename = "test.png";
 	cout << "Writing " << outputfilename << endl;
